@@ -1,16 +1,15 @@
-angular.module('simple-angular-seed', ['ui.router'])
+angular.module('angular-slider', ['ui.router'])
 
 .config(['$stateProvider', '$urlRouterProvider',
-    function($stateProvider, $urlRouterProvider) {
+  function($stateProvider, $urlRouterProvider) {
 
-        $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/');
 
-        $stateProvider
-
-            .state('home', {
-                url: '/',
-                controller: 'homeCtrl',
-                templateUrl: 'modules/home/home.html'
-            });
-
-    }]);
+    $stateProvider
+    .state('main', {
+      url: '/slider',
+      controller: 'mainCtrl',
+      templateUrl: 'modules/main/main.html'
+    })
+  }
+]);
