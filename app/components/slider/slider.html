@@ -1,1 +1,12 @@
-<h1>Hola que pasa!</h1>
+<section>
+  <ul class="slider">
+    <li class="slider__item">
+      <card ng-repeat="card in deckDataSet"
+      card-title="{{card.title}}"
+      card-family="{{card.family}}"
+      card-img="{{card.img}}"
+      card-content="{{card.content}}">
+      </card>
+    </li>
+  </ul>
+</section>

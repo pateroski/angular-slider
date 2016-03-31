@@ -1,8 +1,20 @@
-angular.module('angular-slider')
+(function() {
+  'use strict';
+  angular
+    .module('angular-slider')
+    .directive('card', directive);
 
-.directive('card', [function() {
-  return {
-    restrict: 'E',
-    templateUrl: 'components/card/card.html'
-  };
-}]);
+  function directive() {
+    var directive = {
+      restrict: 'E',
+      templateUrl: 'components/card/card.html',
+      scope: {
+        cardTitle: '@',
+        cardFamily: '@',
+        cardImg: '@',
+        cardConent: '@'
+      }
+    };
+    return directive;
+  }
+})();

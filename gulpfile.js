@@ -11,7 +11,7 @@ var Q = require('q');
 var paths = {
     scripts: 'app/**/*.js',
     styles: ['./app/**/*.css', './app/**/*.scss'],
-    images: './images/**/*',
+    images: './app/images/**/*',
     index: './app/index.html',
     partials: ['app/**/*.html', '!app/index.html'],
     distDev: './dist.dev',
@@ -97,7 +97,7 @@ pipes.scriptedPartials = function() {
         .pipe(plugins.htmlhint.failReporter())
         .pipe(plugins.htmlmin({collapseWhitespace: true, removeComments: true}))
         .pipe(plugins.ngHtml2js({
-            moduleName: "healthyGulpAngularApp"
+            moduleName: "angular-slider"
         }));
 };
 
