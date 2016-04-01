@@ -9,13 +9,13 @@
     $scope.deckDataSet = [
       {
         'title': '1',
-        'family': '',
+        'family': 'fa fa-hand-rock-o',
         'img': './images/default.png',
         'content': ''
       },
       {
         'title': '2',
-        'family': '',
+        'family': 'fa fa-hand-o-right',
         'img': './images/default.png',
         'content': ''
       },
